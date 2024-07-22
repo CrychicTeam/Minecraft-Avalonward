@@ -1,0 +1,415 @@
+{
+  "devMode": false,
+  "key_key.attack": {
+    "value": "key.mouse.left",
+    "canModify": true
+  },
+  "key_key.use": {
+    "value": "key.mouse.right",
+    "canModify": true
+  },
+  "key_key.forward": {
+    "value": "key.keyboard.w",
+    "canModify": true
+  },
+  "key_key.left": {
+    "value": "key.keyboard.a",
+    "canModify": true
+  },
+  "key_key.back": {
+    "value": "key.keyboard.s",
+    "canModify": true
+  },
+  "key_key.right": {
+    "value": "key.keyboard.d",
+    "canModify": true
+  },
+  "key_key.jump": {
+    "value": "key.keyboard.space",
+    "canModify": true
+  },
+  "key_key.sneak": {
+    "value": "key.keyboard.left.shift",
+    "canModify": true
+  },
+  "key_key.sprint": {
+    "value": "key.keyboard.left.control",
+    "canModify": true
+  },
+  "key_key.drop": {
+    "value": "key.keyboard.q",
+    "canModify": true
+  },
+  "key_key.inventory": {
+    "value": "key.keyboard.e",
+    "canModify": true
+  },
+  "key_key.chat": {
+    "value": "key.keyboard.t",
+    "canModify": true
+  },
+  "key_key.playerlist": {
+    "value": "key.keyboard.tab",
+    "canModify": true
+  },
+  "key_key.pickItem": {
+    "value": "key.mouse.middle",
+    "canModify": true
+  },
+  "key_key.command": {
+    "value": "key.keyboard.slash",
+    "canModify": true
+  },
+  "key_key.socialInteractions": {
+    "value": "key.keyboard.p",
+    "canModify": true
+  },
+  "key_key.screenshot": {
+    "value": "key.keyboard.f2",
+    "canModify": true
+  },
+  "key_key.togglePerspective": {
+    "value": "key.keyboard.f5",
+    "canModify": true
+  },
+  "key_key.smoothCamera": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.fullscreen": {
+    "value": "key.keyboard.f11",
+    "canModify": true
+  },
+  "key_key.spectatorOutlines": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.swapOffhand": {
+    "value": "key.keyboard.f",
+    "canModify": true
+  },
+  "key_key.saveToolbarActivator": {
+    "value": "key.keyboard.c",
+    "canModify": true
+  },
+  "key_key.loadToolbarActivator": {
+    "value": "key.keyboard.x",
+    "canModify": true
+  },
+  "key_key.advancements": {
+    "value": "key.keyboard.l",
+    "canModify": true
+  },
+  "key_key.hotbar.1": {
+    "value": "key.keyboard.1",
+    "canModify": true
+  },
+  "key_key.hotbar.2": {
+    "value": "key.keyboard.2",
+    "canModify": true
+  },
+  "key_key.hotbar.3": {
+    "value": "key.keyboard.3",
+    "canModify": true
+  },
+  "key_key.hotbar.4": {
+    "value": "key.keyboard.4",
+    "canModify": true
+  },
+  "key_key.hotbar.5": {
+    "value": "key.keyboard.5",
+    "canModify": true
+  },
+  "key_key.hotbar.6": {
+    "value": "key.keyboard.6",
+    "canModify": true
+  },
+  "key_key.hotbar.7": {
+    "value": "key.keyboard.7",
+    "canModify": true
+  },
+  "key_key.hotbar.8": {
+    "value": "key.keyboard.8",
+    "canModify": true
+  },
+  "key_key.hotbar.9": {
+    "value": "key.keyboard.9",
+    "canModify": true
+  },
+  "key_key.modernfix.config": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_supplementaries.keybind.quiver": {
+    "value": "key.keyboard.v",
+    "canModify": true
+  },
+  "key_equipmentcompare.key.showTooltips": {
+    "value": "key.keyboard.left.shift",
+    "canModify": true
+  },
+  "key_key.cataclysm.ability": {
+    "value": "key.keyboard.x",
+    "canModify": true
+  },
+  "key_key.cataclysm.helmet_ability": {
+    "value": "key.keyboard.c",
+    "canModify": true
+  },
+  "key_key.cataclysm.chestplate_ability": {
+    "value": "key.keyboard.y",
+    "canModify": true
+  },
+  "key_key.cataclysm.boots_ability": {
+    "value": "key.keyboard.v",
+    "canModify": true
+  },
+  "key_key.curios.open.desc": {
+    "value": "key.keyboard.g",
+    "canModify": true
+  },
+  "key_iris.keybind.reload": {
+    "value": "key.keyboard.r",
+    "canModify": true
+  },
+  "key_iris.keybind.toggleShaders": {
+    "value": "key.keyboard.k",
+    "canModify": true
+  },
+  "key_iris.keybind.shaderPackSelection": {
+    "value": "key.keyboard.o",
+    "canModify": true
+  },
+  "key_key.ftbultimine": {
+    "value": "key.keyboard.grave.accent",
+    "canModify": true
+  },
+  "key_key.ftbteams.open_gui": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.ftbquests.quests": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.l2backpack.open": {
+    "value": "key.keyboard.b",
+    "canModify": true
+  },
+  "key_key.jei.copy.recipe.id": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.recipeBack": {
+    "value": "key.keyboard.backspace",
+    "canModify": true
+  },
+  "key_key.jei.toggleOverlay": {
+    "value": "key.keyboard.o:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.toggleWildcardHideIngredient": {
+    "value": "key.mouse.right:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.previousPage": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.focusSearch": {
+    "value": "key.keyboard.f:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.cheatOneItem": {
+    "value": "key.mouse.left",
+    "canModify": true
+  },
+  "key_key.jei.showRecipe2": {
+    "value": "key.mouse.left",
+    "canModify": true
+  },
+  "key_key.jei.showUses2": {
+    "value": "key.mouse.right",
+    "canModify": true
+  },
+  "key_key.jei.cheatItemStack": {
+    "value": "key.mouse.left:SHIFT",
+    "canModify": true
+  },
+  "key_key.jei.toggleBookmarkOverlay": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.nextSearch": {
+    "value": "key.keyboard.down",
+    "canModify": true
+  },
+  "key_key.jei.cheatOneItem2": {
+    "value": "key.mouse.right",
+    "canModify": true
+  },
+  "key_key.jei.closeRecipeGui": {
+    "value": "key.keyboard.escape",
+    "canModify": true
+  },
+  "key_key.jei.toggleEditMode": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.previousRecipePage": {
+    "value": "key.keyboard.page.up",
+    "canModify": true
+  },
+  "key_key.jei.nextPage": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.showUses": {
+    "value": "key.keyboard.u",
+    "canModify": true
+  },
+  "key_key.jei.maxTransferRecipeBookmark": {
+    "value": "key.mouse.left:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.toggleCheatModeConfigButton": {
+    "value": "key.mouse.left:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.cheatItemStack2": {
+    "value": "key.mouse.middle",
+    "canModify": true
+  },
+  "key_key.jei.bookmark": {
+    "value": "key.keyboard.a",
+    "canModify": true
+  },
+  "key_key.jei.previousSearch": {
+    "value": "key.keyboard.up",
+    "canModify": true
+  },
+  "key_key.jei.nextCategory": {
+    "value": "key.keyboard.page.down:SHIFT",
+    "canModify": true
+  },
+  "key_key.jei.toggleCheatMode": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_key.jei.toggleHideIngredient": {
+    "value": "key.mouse.left:CONTROL",
+    "canModify": true
+  },
+  "key_key.jei.clearSearchBar": {
+    "value": "key.mouse.right",
+    "canModify": true
+  },
+  "key_key.jei.previousCategory": {
+    "value": "key.keyboard.page.up:SHIFT",
+    "canModify": true
+  },
+  "key_key.jei.showRecipe": {
+    "value": "key.keyboard.r",
+    "canModify": true
+  },
+  "key_key.jei.nextRecipePage": {
+    "value": "key.keyboard.page.down",
+    "canModify": true
+  },
+  "key_key.jei.transferRecipeBookmark": {
+    "value": "key.mouse.left:SHIFT",
+    "canModify": true
+  },
+  "key_key.traderefresh.refresh": {
+    "value": "key.keyboard.r",
+    "canModify": true
+  },
+  "key_key.special_ability": {
+    "value": "key.keyboard.g",
+    "canModify": true
+  },
+  "key_key.jade.config": {
+    "value": "key.keyboard.keypad.0",
+    "canModify": true
+  },
+  "key_key.jade.show_overlay": {
+    "value": "key.keyboard.keypad.1",
+    "canModify": true
+  },
+  "key_key.jade.toggle_liquid": {
+    "value": "key.keyboard.keypad.2",
+    "canModify": true
+  },
+  "key_key.jade.show_recipes": {
+    "value": "key.keyboard.keypad.3",
+    "canModify": true
+  },
+  "key_key.jade.show_uses": {
+    "value": "key.keyboard.keypad.4",
+    "canModify": true
+  },
+  "key_key.jade.narrate": {
+    "value": "key.keyboard.keypad.5",
+    "canModify": true
+  },
+  "key_key.jade.show_details": {
+    "value": "key.keyboard.left.shift",
+    "canModify": true
+  },
+  "key_key.mount_jump": {
+    "value": "key.keyboard.f7",
+    "canModify": true
+  },
+  "key_key.spellbookopen": {
+    "value": "key.keyboard.z",
+    "canModify": true
+  },
+  "key_key.gui-key-modifier": {
+    "value": "key.keyboard.left.control",
+    "canModify": true
+  },
+  "key_key.spellbookchord": {
+    "value": "key.keyboard.v",
+    "canModify": true
+  },
+  "key_key.modernui.openCenter": {
+    "value": "key.keyboard.k:CONTROL",
+    "canModify": true
+  },
+  "key_key.modernui.zoom": {
+    "value": "key.keyboard.c",
+    "canModify": true
+  },
+  "key_key.l2mods.up": {
+    "value": "key.keyboard.up",
+    "canModify": true
+  },
+  "key_key.l2mods.down": {
+    "value": "key.keyboard.down",
+    "canModify": true
+  },
+  "key_key.l2mods.left": {
+    "value": "key.keyboard.left",
+    "canModify": true
+  },
+  "key_key.l2mods.right": {
+    "value": "key.keyboard.right",
+    "canModify": true
+  },
+  "key_key.l2mods.swap": {
+    "value": "key.keyboard.r",
+    "canModify": true
+  },
+  "key_keu.l2mods.shift": {
+    "value": "key.keyboard.left.shift",
+    "canModify": true
+  },
+  "key_keu.l2mods.alt": {
+    "value": "key.keyboard.left.alt",
+    "canModify": true
+  },
+  "key_cos.key.opencosarmorinventory": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  }
+}
