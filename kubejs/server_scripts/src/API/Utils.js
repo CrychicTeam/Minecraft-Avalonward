@@ -120,7 +120,8 @@ const { STRUCTURE } = $Registries;
  * @Require AsnycLocator
  * @author M1hono
  * @description Asynchronously searches for a specified structure around the player.
- * 
+ * ! Not used as AysncLocator is replaced by another mod.
+ * ! Will be back in the future.
  * This function uses $AsyncLocator to search for the specified structure
  * around the player's current position. The search range is 100 blocks
  * around the player's location. The search result is returned via a callback.
