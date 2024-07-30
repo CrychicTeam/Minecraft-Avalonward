@@ -66,5 +66,11 @@
   },
   "lootr": {
     "info": true
+  },
+  "elementalcombat_jade": {
+    "combat_properties": true
+  },
+  "custommachinery": {
+    "machine_component_provider": true
   }
 }

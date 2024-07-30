@@ -411,5 +411,45 @@
   "key_cos.key.opencosarmorinventory": {
     "value": "key.keyboard.unknown",
     "canModify": true
+  },
+  "key_[Forgery] Toggle/Hold Sprint": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_[Forgery] Toggle Stance": {
+    "value": "key.keyboard.unknown",
+    "canModify": true
+  },
+  "key_Toggle HUD": {
+    "value": "key.keyboard.j",
+    "canModify": true
+  },
+  "key_key.invtweaks_sort_player.desc": {
+    "value": "key.keyboard.backslash",
+    "canModify": true
+  },
+  "key_key.invtweaks_sort_inventory.desc": {
+    "value": "key.keyboard.grave.accent",
+    "canModify": true
+  },
+  "key_key.invtweaks_sort_either.desc": {
+    "value": "key.mouse.middle",
+    "canModify": true
+  },
+  "key_ibeeditor.key.editor": {
+    "value": "key.keyboard.i",
+    "canModify": true
+  },
+  "key_ibeeditor.key.nbt_editor": {
+    "value": "key.keyboard.n",
+    "canModify": true
+  },
+  "key_ibeeditor.key.snbt_editor": {
+    "value": "key.keyboard.r",
+    "canModify": true
+  },
+  "key_ibeeditor.key.vault": {
+    "value": "key.keyboard.j",
+    "canModify": true
   }
 }
