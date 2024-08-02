@@ -198,3 +198,13 @@ export function extractName(id) {
     const parts = withoutNamespace.split('/')
     return parts[parts.length - 1] || ''
 }
+/**
+ * @author M1hono
+ * @description Return a boolean value based on the given probability.
+ * @param {number} probability - A number between 0.0 and 100.0
+ * @returns {boolean} The result of the random chance.
+ */
+export function randomChance(probability) {
+    if (typeof probability !== 'number') return false;
+    return Math.random() < Math.min(Math.max(probability, 0), 100) / 100;
+}
