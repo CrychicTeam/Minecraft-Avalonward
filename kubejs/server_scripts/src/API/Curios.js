@@ -1,18 +1,13 @@
-import { $CuriosApi } from "packages/top/theillusivec4/curios/api/$CuriosApi";
-import { $Player } from "packages/net/minecraft/world/entity/player/$Player";
-import { $Item } from "packages/net/minecraft/world/item/$Item";
-import { $ItemStack } from "packages/net/minecraft/world/item/$ItemStack";
-import { $List } from "packages/java/util/$List";
 /**
  * @author Eikidona | M1hono
  */
-export const PlayerCurios = {
+const PlayerCurios = {
     CuriosApi: $CuriosApi,
 
     /**
      * 获取玩家所有装备饰品的列表
-     * @param {$Player} player 
-     * @returns {$List<$ItemStack>}
+     * @param {$Player_} player 
+     * @returns {$List_<$ItemStack_>}
      */
     getAllItems: function (player) {
         return this.CuriosApi.getCuriosInventory(player).resolve().get().getEquippedCurios().getAllItems();
@@ -20,7 +15,7 @@ export const PlayerCurios = {
 
     /**
      * 获取饰品所在饰品栏槽位
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {$Item} item 
      * @returns {number}
      */
@@ -30,7 +25,7 @@ export const PlayerCurios = {
 
     /**
      * 获取饰品是否存在
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {$Item} item 
      * @returns {boolean}
      */
@@ -40,7 +35,7 @@ export const PlayerCurios = {
 
     /**
      * 获取指定一类的饰品所在饰品栏槽位
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {$Item} item 
      * @param {string} identifier 饰品槽名称
      * @returns {number}
@@ -51,7 +46,7 @@ export const PlayerCurios = {
 
     /**
      * 获取指定一类的饰品(距离0槽位)最近的空饰品栏槽位 如果没有则返回-1
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @returns {number}
      */
@@ -61,7 +56,7 @@ export const PlayerCurios = {
 
     /**
      * 获取玩家某一类饰品槽的总数量
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @returns {number}
      */
@@ -71,7 +66,7 @@ export const PlayerCurios = {
 
     /**
      * 获取玩家某类饰品槽的已装备饰品数
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @returns {number}
      */
@@ -81,7 +76,7 @@ export const PlayerCurios = {
 
     /**
      * 获取玩家某一类饰品槽位置的物品堆栈
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @param {number} slot
      * @returns {$ItemStack}
@@ -92,9 +87,9 @@ export const PlayerCurios = {
 
     /**
      * 获取玩家某一类所有装备饰品的列表
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
-     * @returns {$List<$ItemStack>}
+     * @returns {$List<$ItemStack_>}
      */
     getAllItemsByIdentifier: function (player, identifier) {
         return this.CuriosApi.getCuriosInventory(player).resolve().get().getCurios().get(identifier).getStacks().getAllItems();
@@ -102,7 +97,7 @@ export const PlayerCurios = {
 
     /**
      * 设置玩家某一类饰品的指定槽的物品堆栈
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @param {number} slot 饰品槽
      * @param {$ItemStack} itemStack 
@@ -113,7 +108,7 @@ export const PlayerCurios = {
 
     /**
      * 获取指定饰品的信息
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} id 饰品ID
      * @returns {{hasItem: boolean, count: number, slots: number[]}}
      */
@@ -138,7 +133,7 @@ export const PlayerCurios = {
 
     /**
      * 获取所有唯一的饰品项
-     * @param {$Player} player
+     * @param {$Player_} player
      * @returns {Array<{id: string, count: number, name: string}>}
      */
     getUniqueCuriosItems: function (player) {
@@ -165,7 +160,7 @@ export const PlayerCurios = {
 
     /**
      * 检查玩家是否佩戴特定物品（支持Item对象或物品ID）
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {$Item | string} item
      * @returns {boolean}
      */
@@ -178,7 +173,7 @@ export const PlayerCurios = {
 
     /**
      * 获取特定饰品的总数量
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} itemId
      * @returns {number}
      */
@@ -188,7 +183,7 @@ export const PlayerCurios = {
 
     /**
      * 获取指定identifier的饰品槽信息
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 饰品槽名称
      * @returns {{totalSlots: number, equippedCount: number, emptySlot: number}}
      */
@@ -202,7 +197,7 @@ export const PlayerCurios = {
 
     /**
      * 批量检查多个饰品是否存在
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string[]} itemIds
      * @returns {Object<string, boolean>}
      */
@@ -216,7 +211,7 @@ export const PlayerCurios = {
 
     /**
      * 安全地获取饰品栏物品，如果不存在则返回空ItemStack
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {string} identifier 
      * @param {number} slot 
      * @returns {$ItemStack}
@@ -234,7 +229,7 @@ export const PlayerCurios = {
      * 饰品槽操作方法
      * @param {"shrink"|"grow"|"getfor"|"setfor"|"unlock"|"lock"} method 
      * @param {string} slot 
-     * @param {$Player} player 
+     * @param {$Player_} player 
      * @param {number} [amount] 
      * @returns {number|void}
      */

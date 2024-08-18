@@ -8,7 +8,7 @@ import { $TooltipFlag } from "packages/net/minecraft/world/item/$TooltipFlag";
  * @param {$ItemStack} itemStack 
  * @returns {float} attack damage
  */
-export function getItemAttackDamageFromTooltip(player, itemStack) {
+function getItemAttackDamageFromTooltip(player, itemStack) {
     const tooltips = itemStack.getTooltipLines(player, $TooltipFlag.NORMAL)
     for (let i = 0; i < tooltips.size(); i++) {
         let component = tooltips.get(i)
@@ -37,7 +37,7 @@ import { $EnchantmentHelper } from "packages/net/minecraft/world/item/enchantmen
  * @param {$ItemStack} itemStack 
  * @returns 
  */
-export function getItemAttackDamage(player , itemStack){
+function getItemAttackDamage(player , itemStack){
     const {
         server,
         level,

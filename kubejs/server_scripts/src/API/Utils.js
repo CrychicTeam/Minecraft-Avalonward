@@ -1,39 +1,23 @@
 // priority: 155
-import { $Server } from "packages/info/journeymap/shaded/org/eclipse/jetty/server/$Server";
-import { $Dimension } from "packages/java/awt/$Dimension";
-import { $Structure } from "packages/net/minecraft/world/level/levelgen/structure/$Structure";
-import { $StructurePlaceSettings } from "packages/net/minecraft/world/level/levelgen/structure/templatesystem/$StructurePlaceSettings";
-import { $LootDataType } from "packages/net/minecraft/world/level/storage/loot/$LootDataType";
-import { $DamageSource } from "packages/net/minecraft/world/damagesource/$DamageSource";
-import { $Registries } from "packages/net/minecraft/core/registries/$Registries";
-import { $ResourceKey } from "packages/net/minecraft/resources/$ResourceKey";
-import { $Entity } from "packages/net/minecraft/world/entity/$Entity";
-import { $LevelUtils } from "packages/com/almostreliable/morejs/util/$LevelUtils";
-import { $ResourceOrTag } from "packages/com/almostreliable/morejs/util/$ResourceOrTag";
-import { $BlockPos } from "packages/net/minecraft/core/$BlockPos";
-import { $Player } from "packages/net/minecraft/world/entity/player/$Player";
-import { $TagKey } from "packages/net/minecraft/tags/$TagKey";
-const UUID = Java.loadClass('java.util.UUID');
-const $UUIDUtil = Java.loadClass('net.minecraft.core.UUIDUtil');
 /**
  * @author https://github.com/squoshi
  * @description Return a random UUID.
  * @returns {UUID}
  */
-export let randomUUID = () => UUID.randomUUID();
+let randomUUID = () => UUID.randomUUID();
 /**
  * @description Convert a UUID to the IntegerArray that nbt can use.
  * @param {UUID} uuid
  * @returns {Array.<integer>}
  */
-export let toNBTUUID = (uuid) => $UUIDUtil.uuidToIntArray(uuid);
+let toNBTUUID = (uuid) => $UUIDUtil.uuidToIntArray(uuid);
 /**
  * @author https://github.com/squoshi
  * @description Check the entity by UUID.
  * @param {UUID}
  * @returns {$Entity_}
  */
-export let entityByUUID = (uuid) => {
+let entityByUUID = (uuid) => {
     Utils.server.getEntities().forEach(entity => {
         if (entity.uuid.equals(uuid)) return entity;
         return null;
@@ -42,11 +26,11 @@ export let entityByUUID = (uuid) => {
 /**
  * @author M1hono
  * @description Return a random chest loot table.
- * @param {$Entity} entity
+ * @param {$Entity_} entity
  * @param {string} filter
  * @returns {$LootTable}
  */
-export function chestloot(entity, filter) {
+function chestloot(entity, filter) {
     const {
         server: { lootData }
     } = entity
@@ -66,7 +50,7 @@ export function chestloot(entity, filter) {
  * @param {integer} y 
  * @param {integer} z 
  */
-export function spawnStructure(server, dimension, structure, x, y, z) {
+function spawnStructure(server, dimension, structure, x, y, z) {
     let level = server.getLevel(dimension)
     let pos = BlockPos(x, y, z)
     server.structureManager.get(structure).ifPresent(e => e.placeInWorld(level, pos, pos, new $StructurePlaceSettings(), level.random, 3))
@@ -76,7 +60,7 @@ export function spawnStructure(server, dimension, structure, x, y, z) {
  * @author https://discord.com/channels/303440391124942858/1140369302571200562
  * @description Shake the screen.
  */
-export function screenshake(event) {
+function screenshake(event) {
     const {
         x,
         y,
@@ -98,13 +82,13 @@ const { DAMAGE_TYPE } = $Registries;
  * @author M1hono
  * @description Get the damage source with the entity as the source.
  * @param {import("./TypeValues").DamageType} damageType
- * @param {$Entity_} entity
+ * @param {$Entity__} entity
  * @returns {$DamageSource}
  * @example
  * you must use target's attack method to deal damage to the target and use attacker as the argument.
  * player.attack(getOrSource("minecraft:fire", entity),10) // let the entity deal 10 fire damage to the player.
  */
-export function getOrSource(damageType , entity ) {
+function getOrSource(damageType , entity ) {
     const { level } = entity
     const type = Utils.id(damageType)
     const damageTypeKey = $ResourceKey.create(DAMAGE_TYPE, type)
@@ -142,7 +126,7 @@ const { STRUCTURE } = $Registries;
  *     }
  * });
  */
-// export function asyncStructureLocator(player, structure, callback) {
+// function asyncStructureLocator(player, structure, callback) {
 //     const { level } = player
 //     const structureId = Utils.id(structure)
 //     const structureTagKey = $TagKey.create(STRUCTURE, structureId)
@@ -163,7 +147,7 @@ const { STRUCTURE } = $Registries;
  * @param {string} structure - The identifier of the structure to search for (e.g., "minecraft:ancient_city").
  * @returns {$BlockPos} - The position of the structure if found.
  */
-export function structureLocator(player, structure) {
+function structureLocator(player, structure) {
     const { level } = player
     const structureId = Utils.id(structure)
     const resourceOrTag = $ResourceOrTag.get(structureId , STRUCTURE)
@@ -178,7 +162,7 @@ const { BIOME } = $Registries;
  * @param {string} biome - The identifier of the biome to search for (e.g., "minecraft:plains").
  * @returns {$BlockPos} - The position of the biome if found.
  */
-export function biomeLocator(player, biome) {
+function biomeLocator(player, biome) {
     const { level } = player
     const biomeId = Utils.id(biome)
     const resourceOrTag = $ResourceOrTag.get(biomeId , BIOME)
@@ -190,7 +174,7 @@ export function biomeLocator(player, biome) {
  * @param {string} id - The full resource identifier (e.g., "minecraft:recipe/sth")
  * @returns {string} - The extracted name (e.g., "sth")
  */
-export function extractName(id) {
+function extractName(id) {
     if (typeof id !== 'string' || id.trim() === '') {
         return ''
     }
@@ -204,7 +188,7 @@ export function extractName(id) {
  * @param {number} probability - A number between 0.0 and 100.0
  * @returns {boolean} The result of the random chance.
  */
-export function randomChance(probability) {
+function randomChance(probability) {
     if (typeof probability !== 'number') return false;
     return Math.random() < Math.min(Math.max(probability, 0), 100) / 100;
 }
@@ -215,7 +199,7 @@ export function randomChance(probability) {
  * @param {number} max - The maximum value (integer, can be negative)
  * @returns {number} A random integer between min and max (inclusive)
  */
-export function randomInt(min, max) {
+function randomInt(min, max) {
     if (typeof min !== 'number' || typeof max !== 'number') return NaN;
     return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
   }

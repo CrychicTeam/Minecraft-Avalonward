@@ -6,10 +6,3 @@ ItemEvents.crafted((event) => {
   console.log(inventory.asContainer().getAllItems());
   player.isInWater()
 });
-LootJS.modifiers(event => {
-  event.disableLootModification("champions:champion_loot")
-  event.addLootTypeModifier(LootType.ENTITY)
-  .customCondition({})
-  .modifyLoot()
-
-})

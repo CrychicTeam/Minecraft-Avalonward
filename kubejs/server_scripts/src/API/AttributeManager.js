@@ -13,7 +13,7 @@ const { $CompoundTag } = require("packages/net/minecraft/nbt/$CompoundTag")
  * PlayerAttributeManager.update(player) // Update the player attributes. (Need to be called when the player is cloned or persistentData changed without using this object.)
  * PlayerAttributeManager.getAttribute(player, "minecraft:generic.max_health") // Get the max health attribute value of the player added by this obejct.
  */
-export const PlayerAttributeManager = {
+const PlayerAttributeManager = {
     /**
      * @private This function should not be used out of this object.
      * @author M1hono
