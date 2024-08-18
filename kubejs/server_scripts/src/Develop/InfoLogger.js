@@ -146,18 +146,17 @@ ServerEvents.commandRegistry(event => {
         )
     })
 
-const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
 const $TierSortingRegistry = Java.loadClass("net.minecraftforge.common.TierSortingRegistry")
 const $ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.ItemBuilder")
 // Utility function to create registry keys
 const createRegistryKey = (name) => $ResourceKey.createRegistryKey(name)
 // Create registry keys for the resources we are interested in
 const RECIPE = createRegistryKey("recipe_type")
-const DAMAGE_TYPE = createRegistryKey("damage_type")
+const DAMAGE_TYPES = createRegistryKey("damage_type")
 const ATTRIBUTE = createRegistryKey("attribute")
 const ENCHANTMENT = createRegistryKey("enchantment")
-const BIOME = createRegistryKey("worldgen/biome")
-const STRUCTURE = createRegistryKey("minecraft:worldgen/structure_type")
+const BIOMES = createRegistryKey("worldgen/biome")
+const STRUCTURES = createRegistryKey("minecraft:worldgen/structure_type")
 const FLUID = createRegistryKey("fluid")
 const EFFECT = createRegistryKey("mob_effect")
 const BLOCK = createRegistryKey("block")
@@ -287,11 +286,11 @@ const getAllRegistryTypes = (level) => {
 }
 const commandActions = {
     'getRecipe': (level) => getRegistryEntries(RECIPE, level),
-    'getDamage': (level) => getRegistryEntries(DAMAGE_TYPE, level),
+    'getDamage': (level) => getRegistryEntries(DAMAGE_TYPES, level),
     'getAttribute': (level) => getRegistryEntries(ATTRIBUTE, level),
     'getEnchantment': (level) => getRegistryEntries(ENCHANTMENT, level),
-    'getBiome': (level) => getRegistryEntries(BIOME, level),
-    'getStructure': (level) => getRegistryEntries(STRUCTURE, level),
+    'getBiome': (level) => getRegistryEntries(BIOMES, level),
+    'getStructure': (level) => getRegistryEntries(STRUCTURES, level),
     'getFluid': (level) => getRegistryEntries(FLUID, level),
     'getEffect': (level) => getRegistryEntries(EFFECT, level),
     'getTier': getTiers,

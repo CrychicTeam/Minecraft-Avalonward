@@ -1,4 +1,6 @@
 // priority: 155
+const UUID = Java.loadClass("java.util.UUID");
+const $UUIDUtil = Java.loadClass("net.minecraft.core.UUIDUtil");
 /**
  * @author https://github.com/squoshi
  * @description Return a random UUID.
@@ -43,9 +45,9 @@ function chestloot(entity, filter) {
 /**
  * @author https://discord.com/channels/303440391124942858/1048591172165189632/threads/1100369951308664933
  * @description Spawn a structure in the world.
- * @param {$Server} server 
- * @param {$Dimension} dimension 
- * @param {$Structure} structure 
+ * @param {$MinecraftServer_} server 
+ * @param {$Dimension_} dimension 
+ * @param {$Structure_} structure 
  * @param {integer} x 
  * @param {integer} y 
  * @param {integer} z 
@@ -82,8 +84,8 @@ const { DAMAGE_TYPE } = $Registries;
  * @author M1hono
  * @description Get the damage source with the entity as the source.
  * @param {import("./TypeValues").DamageType} damageType
- * @param {$Entity__} entity
- * @returns {$DamageSource}
+ * @param {$Entity_} entity
+ * @returns {$DamageSource_}
  * @example
  * you must use target's attack method to deal damage to the target and use attacker as the argument.
  * player.attack(getOrSource("minecraft:fire", entity),10) // let the entity deal 10 fire damage to the player.
@@ -110,9 +112,9 @@ const { STRUCTURE } = $Registries;
  * around the player's current position. The search range is 100 blocks
  * around the player's location. The search result is returned via a callback.
  * 
- * @param {$Player} player - The player object, used to determine the starting position for the search.
+ * @param {$Player_} player - The player object, used to determine the starting position for the search.
  * @param {string} structure - The identifier of the structure to search for (e.g., "minecraft:ancient_city").
- * @param {function($BlockPos|null): void} callback - The callback function to be called when the search is complete.
+ * @param {function($BlockPos_|null): void} callback - The callback function to be called when the search is complete.
  *        If a structure is found, the callback will receive a BlockPos object as an argument, representing the structure's position.
  *        If no structure is found, the callback will receive null as an argument.
  * 
@@ -143,9 +145,9 @@ const { STRUCTURE } = $Registries;
  * @Require MoreJS
  * @author M1hono
  * @description searches for a specified structure around the player within 5000 chunks without async.
- * @param {$Player} player - The player object, used to determine the starting position for the search.
+ * @param {$Player_} player - The player object, used to determine the starting position for the search.
  * @param {string} structure - The identifier of the structure to search for (e.g., "minecraft:ancient_city").
- * @returns {$BlockPos} - The position of the structure if found.
+ * @returns {$BlockPos_} - The position of the structure if found.
  */
 function structureLocator(player, structure) {
     const { level } = player
@@ -158,9 +160,9 @@ const { BIOME } = $Registries;
  * @Require MoreJS
  * @author M1hono
  * @description searches for a specified biome around the player 5000 chunks without async.
- * @param {$Player} player - The player object, used to determine the starting position for the search.
+ * @param {$Player_} player - The player object, used to determine the starting position for the search.
  * @param {string} biome - The identifier of the biome to search for (e.g., "minecraft:plains").
- * @returns {$BlockPos} - The position of the biome if found.
+ * @returns {$BlockPos_} - The position of the biome if found.
  */
 function biomeLocator(player, biome) {
     const { level } = player

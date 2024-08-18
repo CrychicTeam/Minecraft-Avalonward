@@ -1,7 +1,4 @@
 // priority: 150
-import { randomUUID } from "../API/Utils"
-const { $Player } = require("packages/net/minecraft/world/entity/player/$Player")
-const { $CompoundTag } = require("packages/net/minecraft/nbt/$CompoundTag")
 /**
  * @public
  * @author M1hono
@@ -18,7 +15,7 @@ const PlayerAttributeManager = {
      * @private This function should not be used out of this object.
      * @author M1hono
      * @description Initialize the player attributes.
-     * @param {$Player} player
+     * @param {$Player_} player
      */
     _initializeAttributes(player) {
         if (!player.persistentData.contains("attributes")) {
@@ -29,7 +26,7 @@ const PlayerAttributeManager = {
      * @public
      * @author M1hono
      * @description Update the player attributes effects.
-     * @param {$Player} player
+     * @param {$Player_} player
      */
     update(player) {
         this._initializeAttributes(player);
@@ -43,7 +40,7 @@ const PlayerAttributeManager = {
      * @public
      * @author M1hono
      * @description Add the attribute to the player.
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} attribute
      * @param {number} value
      */
@@ -59,7 +56,7 @@ const PlayerAttributeManager = {
      * @public
      * @author M1hono
      * @description minus the attribute to the player.
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} attribute
      * @param {number} value
      */
@@ -67,7 +64,7 @@ const PlayerAttributeManager = {
         this.addAttribute(player, attribute, -value)
     },
     /**
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} attribute
      */
     removeAttribute(player, attribute) {
@@ -84,7 +81,7 @@ const PlayerAttributeManager = {
      * @private This function should not be used out of this object.
      * @author M1hono
      * @description Apply the attribute to the player.
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} attribute
      * @param {number} value
      */
@@ -106,7 +103,7 @@ const PlayerAttributeManager = {
      * @public
      * @author M1hono
      * @description Get the attribute value of the player.
-     * @param {$Player} player
+     * @param {$Player_} player
      * @param {string} attribute
      * @returns {number}
      */

@@ -1,3 +1,5 @@
+// priority: 155
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
 /**
  * @author Eikidona | M1hono
  */
