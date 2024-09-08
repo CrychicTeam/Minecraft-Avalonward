@@ -1,11 +1,4 @@
 version:3465
-autoAttack:true
-shieldCrouch:true
-rhythmicAttacks:true
-protIndicator:false
-fishingRodLegacy:false
-attackIndicatorValue:2.0
-shieldIndicator:1
 autoJump:false
 operatorItemsTab:false
 autoSuggestions:true

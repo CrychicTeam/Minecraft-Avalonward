@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "32A190C3D8D36CAB", title: "test" }
+		{ id: "567EB24BC479CDE9", title: "test2" }
+	]
+}

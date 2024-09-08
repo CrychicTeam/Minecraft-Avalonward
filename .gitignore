@@ -18,3 +18,4 @@ usercache.json
 usernamecache.json
 kubejs/config/probe-settings.json
 XaeroWaypoints/
+*.log
